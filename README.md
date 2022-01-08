@@ -1,8 +1,6 @@
 Ensure Versions in Pip Requirements Files
 ------------------------------------------------------
 
-## Purpose
-
 Implement a GitHub action that checks the pip requirements file.
 
 ### Behavior
