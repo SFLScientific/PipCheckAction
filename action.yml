@@ -1,0 +1,7 @@
+# action.yml
+name: "Pip Requirements Checker"
+description: "Ensure the version of every package is specified"
+author: "Ryan Murphy / SFL Scientific"
+runs:
+  using: "docker"
+  image: "Dockerfile"
