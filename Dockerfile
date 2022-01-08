@@ -7,6 +7,7 @@ ADD . /app
 WORKDIR /app
 
 # Install dependencies directly into app source dir
+# Setuptools appears necessary to succesfully install requirements-parser
 RUN pip install --upgrade --target=/app setuptools requirements-parser
 
 # A distroless container image with Python and some basics like SSL certificates
