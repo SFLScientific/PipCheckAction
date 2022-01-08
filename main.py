@@ -95,15 +95,12 @@ def requirement_is_valid(req):
         print("No specification.")
         return False
 
-    # For all specifications, make sure the version
-    #  is specified and conforms to expectations of having digits and dots
-    #  (e.g., version 42.1337)
+    # For all specifications, make sure the version is specified
     for spec in specs:
         # Pull out the version string, the second element of the spec.
         version_str = spec[1]
-        valid = all(char.isdigit() or char == "." for char in version_str)
-        if not valid:
-            print(f"Unexpected specification string: {version_str}")
+        if len(version_str.strip()) == 0:
+            print("The specification is just whitespace, which is invalid.")
             return False
 
     return True
