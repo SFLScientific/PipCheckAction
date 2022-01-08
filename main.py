@@ -48,4 +48,6 @@ def req_is_valid(req):
     
 
 if __name__ == "__main__":
+    print(os.getcwd())
+    print(os.listdir())
     main("requirements.txt")
